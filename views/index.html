@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <title>Funny Crab Pictures</title>
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" href="styles.css"/>
+    </head>
+    <body>
+        <header>
+            <h1>
+                <img class="logo"/>
+                Funny Crab Pictures
+            </h1>
+
+            <section class="profile">
+                <div>
+                    <strong class="name">Torsten Mandry</strong>
+                    <small class="title">Frontend Noob</small>
+                    <a href="#editProfile">edit</a>
+                </div>
+                <img class="profile"/>
+            </section>
+        </header>
+
+        <nav>
+            <a class="upload" href="#uploadImage">upload</a>
+        </nav>
+        
+        <main>
+            <ol class="images">
+                {% for image in images %}
+                <li>
+                    <a href="{{ image.source }}">
+                        <figure>
+                            <img src="{{ image.url }}"/>
+                            <figcaption>{{ image.description }}</figcaption>
+                            <!-- TODO Like Image -->
+                        </figure>
+                    </a>
+                </li>
+                {% endfor %}
+            </ol>
+        </main>
+
+        <footer>© 2021 tma</footer>
+
+        <hr/>
+
+        <form id="uploadImage">
+            <fieldset>
+                <legend>Upload Image</legend>
+            </fieldset>
+        </form>
+
+        <form id="editProfile">
+            <fieldset>
+                <legend>Edit Profile</legend>
+            </fieldset>
+        </form>
+    </body>
+</html>

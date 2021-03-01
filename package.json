@@ -1,0 +1,29 @@
+{
+  "name": "tma-photo-sharing",
+  "version": "1.0.0",
+  "description": "Simple photo sharing app implemented in ROCA style",
+  "main": "index.js",
+  "type": "module",
+  "author": "Torsten Mandry",
+  "license": "ISC",
+  "homepage": "https://github.com/torstenmandry/web-trigs-roca-photo-sharing#readme",
+
+  "scripts": {
+    "start": "node index.js",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  
+  "dependencies": {
+    "express": "^4.17.1",
+    "nunjucks": "^3.2.3"
+  },
+
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/torstenmandry/web-trigs-roca-photo-sharing.git"
+  },
+
+  "bugs": {
+    "url": "https://github.com/torstenmandry/web-trigs-roca-photo-sharing/issues"
+  }
+}
