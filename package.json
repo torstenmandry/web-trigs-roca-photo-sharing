@@ -7,22 +7,19 @@
   "author": "Torsten Mandry",
   "license": "ISC",
   "homepage": "https://github.com/torstenmandry/web-trigs-roca-photo-sharing#readme",
-
   "scripts": {
     "start": "node index.js",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
-  
   "dependencies": {
+    "body-parser": "^1.19.0",
     "express": "^4.17.1",
     "nunjucks": "^3.2.3"
   },
-
   "repository": {
     "type": "git",
     "url": "git+https://github.com/torstenmandry/web-trigs-roca-photo-sharing.git"
   },
-
   "bugs": {
     "url": "https://github.com/torstenmandry/web-trigs-roca-photo-sharing/issues"
   }
