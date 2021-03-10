@@ -35,9 +35,20 @@
                         <figure>
                             <img src="{{ image.url }}"/>
                             <figcaption>{{ image.description }}</figcaption>
-                            <!-- TODO Like Image -->
                         </figure>
                     </a>
+                    <div class="community-likes">
+                        <form action="/image/{{ image.id }}" method="post">
+                            {% if image.likedByCurrentUser %}
+                                <input type="hidden" name="like" value="-1">
+                                <button><b>⭑</b></button>
+                            {% else %}
+                                <input type="hidden" name="like" value="1">
+                                <button><b>⭒</b></button>
+                            {% endif %}
+                            <em>({{ image.likes }})</em>
+                        </form>
+                    </div>
                 </li>
                 {% endfor %}
             </ol>
